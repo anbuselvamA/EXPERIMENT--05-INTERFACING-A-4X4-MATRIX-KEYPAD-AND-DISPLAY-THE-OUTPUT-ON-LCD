@@ -191,6 +191,7 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
  
 
 ## STM 32 CUBE PROGRAM :
+```
 #include "main.h"
 #include"stdbool.h"
 #include"lcd.h"
@@ -342,6 +343,7 @@ else if(!col2)
 	  HAL_Delay(500);
   }
 }
+```
 
 
 
