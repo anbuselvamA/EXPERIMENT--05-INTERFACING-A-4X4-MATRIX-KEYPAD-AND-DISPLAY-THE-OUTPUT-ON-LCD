@@ -128,51 +128,27 @@ C2
 Jump to second line, position 2
  
 ## Procedure:
- 1. click on STM 32 CUBE IDE, the following screen will appear 
+Select a new STM32 Project.
+
+Select GPIO Ports
+```
 
 
+  PC0 , PC1 , PC2 , PC3 , PA0 , PA1 , PA2 , PA3 , PB0 , PB1  -> Output
 
- 2. click on FILE, click on new stm 32 project 
+  PC4 , PC5 , PC7 , PC8  -> Input
+```
+Configure the Input Ports at Pull up Mode followed by generating the code.
 
+Build Debug and Create 'hex.file'
 
-3. select the target to be programmed  as shown below and click on next 
+Open a new Proteus Project.
 
+Select STM32F401RB, LCD 16*2 and Keypad.
 
+Connect PA0 to D7 , PA1 to D6 , PA2 to D5 , PA3 to D4 , PB0 to RS , PB1 to E , PC0 to r1 , PC1 to r2 , PC2 to r3 , PC3 to r4 , PC4 to c1 , PC5 to c2 , PC6 to c3 and PC7 to c4.
 
-4.select the program name 
-
-
-
-5. corresponding ioc file will be generated automatically 
-
-6.select the appropriate pins as gipo, in or out, USART or required options and configure 
-
-
-
-7.click on cntrl+S , automaticall C program will be generated 
-
-8. edit the program and as per required 
-
-9. Add necessary library files of LCD 16x2 , write the program and use project and build  
-
-
-10. once the project is bulild 
-
-11. click on debug option 
-=450>
-
-
-12.  Creating Proteus project and running the simulation
-We are now at the last part of step by step guide on how to simulate STM32 project in Proteus.
-
-13. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
-14. After creation of the circuit as per requirement as shown below 
-
-
-14. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
-https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
-
-15. click on debug and simulate using simulation as shown below 
+Check the execution of the output using Run Option.
 
 
 
